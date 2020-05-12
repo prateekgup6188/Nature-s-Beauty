@@ -32,7 +32,7 @@ var mongoose   = require("mongoose"),
             }
             else{
                 // console.log("All Campgrounds Removed");
-                //add a few campgrounds
+                // add a few campgrounds
                 data.forEach(function(seed){
                     Campground.create(seed,function(err,campground){
                         if(err){
