@@ -1,0 +1,36 @@
+<%- include("../partials/header") %>
+<div class="container" id="page">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome To Nature's Beauty!</h1>
+            <p>Here are some beautiful hand-picked breathtaking nature's pics for you</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add more Landscape Pics</a>
+            </p>
+        </div>
+    </header>
+        <div class="row match-to-row">
+            <% campgrounds.forEach(function(campground){ %>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src = "<%= campground.image %>" >
+                        <div class="caption" style="text-align: center;">
+                            <h4><strong><%= campground.name %></strong></h4>
+                        </div>
+                        <p style="text-align: center;">
+                            <a href="/campgrounds/<%= campground._id %>" class="btn btn-primary">More Info!</a>
+                        </p>
+                    </div>
+                </div>
+        <% }); %>
+        </div>
+        <ul class="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+</div>  
+
+<%- include("../partials/footer") %>
