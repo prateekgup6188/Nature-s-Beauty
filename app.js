@@ -11,8 +11,9 @@ var express        = require('express'),
     User           = require("./models/user"),
     methodOverride = require("method-override");
     // seedDB();
-    // mongoose.connect('mongodb://localhost/yelp_camp',{
-    mongoose.connect('mongodb+srv://Prateek:prateek6188@cluster0-p1zxm.mongodb.net/test?retryWrites=true&w=majority',{
+    console.log(process.env.DATABASEURL);
+    mongoose.connect('mongodb://localhost/yelp_camp',{
+    //mongoose.connect('mongodb+srv://Prateek:prateek6188@cluster0-p1zxm.mongodb.net/test?retryWrites=true&w=majority',{
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
