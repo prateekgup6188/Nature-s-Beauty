@@ -23,9 +23,7 @@ var express        = require('express'),
     console.log(`DB Connection Error: ${err.message}`);
   });
 
-  // mongodb+srv://Prateek:prateek6188@cluster0-p1zxm.mongodb.net/test?retryWrites=true&w=majority
-
-var  commentRoutes    = require("./routes/comments"),
+  var  commentRoutes    = require("./routes/comments"),
      campgroundRoutes = require("./routes/campgrounds"),
      indexRoutes       = require("./routes/index");
 
