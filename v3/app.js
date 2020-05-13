@@ -11,7 +11,8 @@ var express        = require('express'),
     User           = require("./models/user"),
     methodOverride = require("method-override");
     // seedDB();
-    mongoose.connect('mongodb://localhost/yelp_camp',{
+    // mongoose.connect('mongodb://localhost/yelp_camp',{
+    mongoose.connect('mongodb+srv://Prateek:prateek6188@cluster0-p1zxm.mongodb.net/test?retryWrites=true&w=majority',{
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true
@@ -20,6 +21,8 @@ var express        = require('express'),
   .catch(err => {
     console.log(`DB Connection Error: ${err.message}`);
   });
+
+  // mongodb+srv://Prateek:prateek6188@cluster0-p1zxm.mongodb.net/test?retryWrites=true&w=majority
 
 var  commentRoutes    = require("./routes/comments"),
      campgroundRoutes = require("./routes/campgrounds"),
