@@ -5,7 +5,7 @@
             <h1>Welcome To Nature's Beauty!</h1>
             <p>Here are some beautiful hand-picked breathtaking nature's pics for you</p>
             <p>
-                <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add more Landscape Pics</a>
+                <a class="btn btn-primary btn-lg" href="/campgrounds/new">Add More Awesome Nature Views</a>
             </p>
         </div>
     </header>
@@ -13,7 +13,7 @@
             <% campgrounds.forEach(function(campground){ %>
                 <div class="col-md-3 col-sm-6">
                     <div class="thumbnail">
-                        <img src = "<%= campground.image %>" >
+                        <img style="height:15em" src = "<%= campground.image %>" >
                         <div class="caption" style="text-align: center;">
                             <h4><strong><%= campground.name %></strong></h4>
                         </div>
