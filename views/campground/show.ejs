@@ -12,7 +12,7 @@
                     <p class="lead"><strong><%= campground.description %></strong></p>
                     <p>
                         <em>
-                            Created By - <strong><%= campground.author.username %></strong>
+                            Posted By - <strong><%= campground.author.username %></strong>
                         </em>
                     </p>
                     <% if(currentUser && campground.author.id.equals(currentUser._id)){ %>
